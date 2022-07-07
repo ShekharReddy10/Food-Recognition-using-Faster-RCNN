@@ -1,0 +1,22 @@
+{% extends 'index.html' %} {% block content %}
+<center>
+    {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+    <li>{{ message }}</li>
+    {% endfor %} {% else %}
+    <h1>Nutrition Details</h1>
+    <!-- <img src={{filep}} alt="Food Image" class="food_image"><br> -->
+    <button id="name">Prediction is : {{name}}</button><br>
+
+    <button id="Protein">Protein: {{data1}}</button><br>
+
+    <button id="Calcium">Calcium: {{data2}}</button><br>
+
+    <button id="Fat">Fat: {{data3}}</button><br>
+    <button id="carbohydrates">carbohydrates: {{data4}}</button><br>
+
+    <button id="vitamins">vitamins: {{data5}}</button> {% endif %} {% endwith %}
+
+</center>
+
+
+{% endblock %}
